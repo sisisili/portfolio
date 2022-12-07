@@ -1,0 +1,94 @@
+.play {
+    overflow: hidden;
+}
+
+.play_container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================ EMAIL ================ */
+.email {
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+    position: absolute;
+    right:1rem;
+    top: 33rem;
+    transform: rotate(90deg);
+}
+
+
+/* ================ SOCIALS ================ */
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    position:absolute;
+    left: 5rem;
+    top: 25rem;
+}
+
+.social_icon {
+    color: var(--color-primary);
+}
+
+.socials::after,
+.socials::before{
+    content: "";
+    width: 2px;
+    height: 3rem;
+    background: var(--color-primary);
+}
+
+/* ============= MEDIA QUERIES (LARGE DEVICES) ==================== */
+@media screen and (max-width: 1500px) {
+    .play_container {
+        max-width: 800px;
+    }
+}
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+    .play_container {
+        max-width: 600px;
+    }
+
+    .email {
+        top: 25rem;
+    }
+
+    .socials {
+        top: 18rem;
+    }
+}
+
+/* ============= MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+    .play_container {
+        max-width: 300px;
+    }
+
+    .email {
+        top: 11.5rem;
+        right: -1.5rem;
+    }
+
+    .socials {
+        top: 8rem;
+        left: 1.5rem;
+        gap: 0.5rem;
+    }
+
+    .socials::after,
+    .socials::before{
+        content: "";
+        width: 1px;
+        height: 1rem;
+    }
+}
