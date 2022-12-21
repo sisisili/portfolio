@@ -1,24 +1,42 @@
 .play {
     overflow: hidden;
+    margin: auto;
+    padding-top: 115px;
+    cursor: url('../../assets/Butterfly_cursor.gif'), auto;
+}
+
+.butterflies {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    position: absolute;
 }
 
 .play_container {
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    align-items: center;
+}
+
+.play_gifs {
+    display: block;
+    width: 100%;
+    max-width: 1500px;
+    object-fit: cover;
 }
 
 /* ================ EMAIL ================ */
 .email {
-    font-family: var(--font-secondary);
+
     color: var(--color-primary);
     position: absolute;
     right:1rem;
     top: 33rem;
     transform: rotate(90deg);
+    cursor: pointer;
 }
 
 
@@ -30,8 +48,9 @@
     align-content: center;
     gap: 1rem;
     position:absolute;
-    left: 5rem;
+    left: 6rem;
     top: 25rem;
+    cursor: pointer;
 }
 
 .social_icon {
@@ -48,34 +67,85 @@
 
 /* ============= MEDIA QUERIES (LARGE DEVICES) ==================== */
 @media screen and (max-width: 1500px) {
+    .play {
+        padding-top: 96px;
+    }
+
     .play_container {
-        max-width: 800px;
+        max-width: 700px;
+    }
+
+    .email {
+        top: 28rem;
+    }
+
+    .socials {
+        top: 20rem;
     }
 }
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ==================== */
 @media screen and (max-width: 1024px) {
+    .play {
+        padding-top: 77px;
+    }
+
     .play_container {
-        max-width: 600px;
+        max-width: 500px;
+        margin: auto;
     }
 
     .email {
-        top: 25rem;
+        top: 20rem;
     }
 
     .socials {
-        top: 18rem;
+        top: 13rem;
+    }
+}
+
+/* ============= ADDTIONAL (MEDIUM TO SMALL) ==================== */
+@media screen and (max-width: 800px) {
+    .play {
+        padding-top: 58px;
+    }
+
+    .play_container {
+        max-width: 400px;
+    }
+
+    .email {
+        top: 14.5rem;
+        right: 2.5rem;
+    }
+
+    .socials {
+        top: 10rem;
+        left: 5rem;
+        gap: 0.75rem;
+    }
+
+    .socials::after,
+    .socials::before{
+        content: "";
+        width: 1px;
+        height: 1.5rem;
     }
 }
 
 /* ============= MEDIA QUERIES (SMALL DEVICES) ==================== */
 @media screen and (max-width: 600px) {
+    .play {
+        padding-top: 48px;
+    }
+
     .play_container {
         max-width: 300px;
+        margin: auto;
     }
 
     .email {
-        top: 11.5rem;
+        top: 11rem;
         right: -1.5rem;
     }
 
@@ -92,3 +162,5 @@
         height: 1rem;
     }
 }
+
+

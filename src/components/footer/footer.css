@@ -1,0 +1,52 @@
+footer {
+    cursor: url('../../assets/Butterfly_cursor.gif'), auto;
+    
+    width: 1200px;
+    height: 300px;
+    
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+
+    background-image: url('../../assets/FooterLog.png');
+    background-position-x: center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer_copy {
+    text-align: center;
+}
+
+/* ============= MEDIA QUERIES (LARGE DEVICES) ==================== */
+@media screen and (max-width: 1500px) {
+    footer {
+        width: 1000px;
+        height: 250px;
+    }
+}
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+    footer {
+        width: 800px;
+        height: 200px;
+    }
+}
+
+/* ============= ADDTIONAL (MEDIUM TO SMALL) ==================== */
+@media screen and (max-width: 800px) {
+    footer {
+        width: 600px;
+        height: 150px;
+    }
+}
+
+/* ============= MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+    footer {
+        width: 360px;
+        height: 80px;
+    }
+}

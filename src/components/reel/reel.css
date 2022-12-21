@@ -1,0 +1,107 @@
+.reel {
+    cursor: url('../../assets/Butterfly_cursor.gif'), auto;
+    overflow: hidden;
+    width: 100%;
+    height: 1100px;
+}
+
+.reel_container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.reel_board {
+    width: 1500px;
+    height: 900px;
+}
+
+iframe {
+    width: 797px;
+    height: 448px;
+    position: relative;
+    top: -655px;
+    border-radius: 15px;
+}
+
+
+
+/* ============= MEDIA QUERIES (LARGE DEVICES) ==================== */
+@media screen and (max-width: 1500px) {
+    .reel {
+        height: 870px;
+    }
+
+    .reel_board {
+        width: 1200px;
+        height: 720px;
+    }
+
+    iframe {
+        top: -527px;
+        width: 643px;
+        height: 362px;
+    }
+}
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+    .reel {
+        height: 700px;
+    }
+
+    .reel_board {
+        width: 1000px;
+        height: 600px;
+    }
+
+    iframe {
+        top: -438px;
+        width: 538px;
+        height: 300px;
+    }
+
+}
+
+/* ============= ADDTIONAL (MEDIUM TO SMALL) ==================== */
+@media screen and (max-width: 800px) {
+    .reel {
+        height: 600px;
+    }
+
+    .reel_board {
+        width: 800px;
+        height: 480px;
+    }
+
+    iframe {
+        top: -351px;
+        width: 428px;
+        height: 241px;
+        border-radius: 10px;
+    }
+}
+
+/* ============= MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+    .reel {
+        height: 350px;
+    }
+
+    .reel_board {
+        width: 500px;
+        height: 300px;
+    }
+
+    iframe {
+        top: -219px;
+        width: 267px;
+        height: 150px;
+        border-radius: 6px;
+    }
+
+}

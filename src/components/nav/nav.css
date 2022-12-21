@@ -1,19 +1,22 @@
 nav {
-    overflow: hidden;
-    width: 1500px;
-    height: 150px;
-    margin: auto;
-    
+    width: 1200px;
+    height: 115px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: 5;
 
-    background-image: url(../../assets/NavBar.png);
+    background-image: url('../../assets/NavBar.png');
     background-position-x: center ;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .nav_text {
     margin: auto;
-    margin-top: 65px;
+    margin-top: 50px;
     max-width: 1500px;
     display: flex;
     justify-content: space-between;
@@ -21,15 +24,28 @@ nav {
     position: relative;
 }
 
-h1 {
-   padding-left: 8%;
+.logo {
+    margin-left: 8%;
+    background-image: url('../../assets/SISI_logo_Full_light.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    width: 106px;
+    position: relative;
+    bottom: 4px;
+    transition: all 200ms ease;
+}
+
+.logo:hover {
+    background-image: url(../../assets/SISI_logo_Full_pink.gif);
 }
 
 a {
     color: #ffffff;
 }
 
-ul {
+.nav_list {
     display: flex;
     float: right;
     gap: 5rem;
@@ -40,14 +56,14 @@ ul {
 @media screen and (max-width: 1500px) {
     nav {
         width: 1000px;
-        height: 100px;
+        height: 96px;
     }
 
     .nav_text {
         margin-top: 35px;
     }
 
-    ul {
+    .nav_list {
         gap: 4rem;
     }
 }
@@ -57,15 +73,21 @@ ul {
 @media screen and (max-width: 1024px) {
     nav {
         width: 800px;
-        height: 80px;
+        height: 77px;
     }
 
     .nav_text {
         margin-top: 25px;
     }
 
-    ul {
+    .nav_list {
         gap: 3rem;
+    }
+
+    .logo {
+        height: 50px;
+        width: 90px;
+        bottom: 2px;
     }
 }
 
@@ -73,48 +95,36 @@ ul {
 @media screen and (max-width: 800px) {
     nav {
         width: 600px;
-        height: 60px;
+        height: 58px;
     }
 
     .nav_text {
-        margin-top: 20px;
+        margin-top: 23px;
     }
 
-    ul {
+    .nav_list {
         gap: 2rem;
+    }
+
+    .logo {
+        height: 25px;
+        width: 44px;
+        bottom: 0.5px;
     }
 }
 
 /* ============= MEDIA QUERIES (SMALL DEVICES) ==================== */
 @media screen and (max-width: 600px) {
     nav {
-        width: 500px;
-        height: 50px;
-    }
-
-    .nav_text {
-        margin-top: 17px;
-    }
-
-    ul {
-        gap: 2rem;
-    }
-}
-
-/* ============= MEDIA QUERIES (PHONE DEVICES) ==================== */
-@media screen and (max-width: 375px) {
-
-    nav {
         width: 360px;
-        height: 35px;
+        height: 34px;
     }
 
     .nav_text {
-        margin-top: 8px;
+        margin-top: 10px;
     }
 
-    ul {
+    .nav_list {
         gap: 2rem;
     }
-    
 }

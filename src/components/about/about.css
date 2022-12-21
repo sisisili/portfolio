@@ -1,0 +1,12 @@
+.about {
+    cursor: url('../../assets/Butterfly_cursor.gif'), auto;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headshot {
+    width: 20%;
+}

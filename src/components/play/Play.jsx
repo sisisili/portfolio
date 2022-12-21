@@ -1,23 +1,26 @@
 import React from 'react'
-import BTN from './BTN.jsx'
-import Socials from './Socials.jsx'
+import BTN from '../general/Button/BTN.jsx'
+import Socials from '../general/Socials.jsx'
 import './play.css'
-import PlayVideo from '../../assets/Play.gif'
+import PlayVideo from '../../assets/Play_loop.gif'
+import Butterflies from '../../assets/Butterflies.gif'
 
 const Play = () => {
   return (
-    <div className='play'>
+    <section className='play' id='play' >
+
+      <img className='butterflies' src={Butterflies} />
 
       <Socials />
 
       <div className='play_container'>
-        <img src={PlayVideo} />
+        <img className='play_gifs' src={PlayVideo} />
         <BTN />
       </div>
 
       <a className='email'>sisili.tv@gmail.com</a>
 
-    </div>
+    </section>
   )
 }
 

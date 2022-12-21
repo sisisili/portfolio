@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@font-face{
+    font-family: Blufy;
+    src: url('./assets/AyrBlufy-BlackRegular.otf')
+}
 
 .note {
         text-align: center;
-        margin-top: 3rem;
+        margin-top: 8rem;
 }
 
 * {
@@ -22,8 +26,9 @@
     --color-secondary: #F89FE1;
     --color-light: #ffffff;
 
-    --font-primary: 'Carter One', cursive;
-    --font-secondary: 'Noto Sans', sans-serif;
+    --font-primary: 'Carter One', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+    --font-optional: 'Blufy', sans-serif;
 
     --transition: all 200ms ease;
 }
@@ -32,9 +37,6 @@ html {
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
 
 body {
     font-family: var(--font-primary);
@@ -43,72 +45,90 @@ body {
     line-height: 1.7;
 }
 
+
 /* ============= GENERAL STYLES ==================== */
 h1 {
-    font-size: 2.25rem;
-    color: var(--color-secondary);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+p {
+    font-size: 0.875rem;
+    color: var(--color-primary);
+    margin-top: 0px;
 }
 
 a{
     color: var(--color-light);
     font-size: 1.5rem;
     transition: var(--transition);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 a:hover {
     color: var(--color-secondary);
+    cursor: pointer;
 }
 
 section {
-    margin-top: 10rem;
+    padding-top: 200px;
+}
+
+footer {
+    margin-top: 200px;
 }
 
 img {
-    display: block;
-    width: 100%;
     max-width: 1500px;
-    object-fit: cover;
 }
 
 /* ============= MEDIA QUERIES (LARGE DEVICES) ==================== */
 @media screen and (max-width: 1500px) {
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     a{
         font-size: 1.25rem;
     }
 
+    p {
+        font-size: 0.75rem;
+    }
+
+    section {
+        padding-top: 150px;
+    }
+
+    footer {
+        margin-top: 150px;
+    }
 }
 
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ==================== */
 @media screen and (max-width: 1024px) {
     h1 {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
     }
 
     a{
         font-size: 1.15rem;
     }
 
+    section {
+        padding-top: 100px;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
 }
 
 /* ============= ADDTIONAL (MEDIUM TO SMALL) ==================== */
 @media screen and (max-width: 800px) {
-    h1 {
-        font-size: 1.25rem;
-    }
-
-    a{
-        font-size: 0.75rem;
-    }
-}
-
-/* ============= MEDIA QUERIES (SMALL DEVICES) ==================== */
-@media screen and (max-width: 600px) {
     h1 {
         font-size: 1rem;
     }
@@ -117,10 +137,40 @@ img {
         font-size: 0.75rem;
     }
 
+    section {
+        padding-top: 80px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+}
+
+/* ============= MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 0.5rem;
+    }
+
+    a{
+        font-size: 0.65rem;
+    }
+
+    p {
+        font-size: 0.2rem;
+    }
+
+    section {
+        padding-top: 50px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .note {
+        margin-top: 3rem;
+}
 
 }
 
-/* ============= MEDIA QUERIES (PHONE DEVICES) ==================== */
-@media screen and (max-width: 375px) {
-
-}

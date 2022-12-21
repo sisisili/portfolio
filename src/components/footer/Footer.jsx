@@ -3,7 +3,9 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <div>footer</div>
+    <footer>
+      <p className='footer_copy'>sisili.tv@gmail.com</p>
+    </footer>
   )
 }
 
